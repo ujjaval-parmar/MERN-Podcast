@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    input, textarea, select{
+        @apply w-full p-2  border border-gray-500 focus:outline-none placeholder:text-gray-500 placeholder:capitalize 
+    }
+
+
+    .line {
+        @apply w-full h-0.5 bg-black  transition-all duration-300
+    }
+
+    .line-1.active {
+        @apply rotate-45 translate-y-2 origin-center
+    }
+
+    .line-2.active {
+        @apply w-0 transition-none
+    }
+
+    .line-3.active {
+        @apply -rotate-45 -translate-y-3.5 origin-center
+    }
+
+}
